@@ -2,6 +2,7 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 import os
 import json
+import requests
 from generate_json import generate_json_from_html
 
 app = Flask(__name__)
@@ -9,19 +10,18 @@ CORS(app)
 
 @app.route("/opened-buy-order", methods=["GET"])
 def get_opened_buy_order():
-    html_path = "cnsOrdemDeCompraEmAberto.html"
+    html_url = "http://daruix.com.br/ordemDeCompraEmAberto/cnsOrdemDeCompraEmAberto.html"
     json_output_path = "openedBuyOrder.json"
 
-    if not os.path.exists(html_path):
-        return jsonify({
-            "status": "error",
-            "message": "Arquivo HTML não encontrado.",
-            "data": []
-        }), 404
-
     try:
-        generate_json_from_html(html_path, json_output_path)
+        # Faz o download do HTML remoto
+        response = requests.get(html_url)
+        response.raise_for_status()  # Lança exceção para erros HTTP
 
+        # Passa o conteúdo HTML para a função que gera o JSON
+        generate_json_from_html(response.text, json_output_path)
+
+        # Lê o JSON gerado
         with open(json_output_path, "r", encoding="utf-8") as file:
             data = json.load(file)
 
@@ -31,10 +31,17 @@ def get_opened_buy_order():
             "pagination": {
                 "total": len(data),
                 "page": 1,
-                "per_page": len(data)  # tudo de uma vez, sem paginação real ainda
+                "per_page": len(data)
             },
             "data": data
         }), 200
+
+    except requests.exceptions.RequestException as req_err:
+        return jsonify({
+            "status": "error",
+            "message": f"Erro ao acessar o HTML remoto: {str(req_err)}",
+            "data": []
+        }), 500
 
     except Exception as e:
         return jsonify({

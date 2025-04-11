@@ -1,17 +1,10 @@
 import json
-import os
 from bs4 import BeautifulSoup
 from models import OpenedBuyOrder
 
-FIELDS = ['pc_number', 'cod', 'dt_solicitation', 'dt_delivery', 'buy_order_value', 'supplier', 'description']
+FIELDS = ['pc_number', 'cod', 'dt_solicitation', 'dt_delivery', 'buy_order_value', 'supplier', 'description', 'status']
 
-def extract_rows_from_html(filepath):
-    if not os.path.exists(filepath):
-        raise FileNotFoundError(f"Arquivo não encontrado: {filepath}")
-
-    with open(filepath, 'r', encoding='utf-8') as file:
-        html_content = file.read()
-
+def extract_rows_from_html_content(html_content):
     soup = BeautifulSoup(html_content, 'html.parser')
     table = soup.find('table')
     if not table:
@@ -39,8 +32,8 @@ def parse_rows_to_models(rows, fields):
 
     return models
 
-def generate_json_from_html(html_path, json_output_path):
-    rows = extract_rows_from_html(html_path)
+def generate_json_from_html(html_content, json_output_path):
+    rows = extract_rows_from_html_content(html_content)
     models = parse_rows_to_models(rows, FIELDS)
 
     with open(json_output_path, 'w', encoding='utf-8') as json_file:

@@ -2,7 +2,7 @@ class OpenedBuyOrder():
     """
     Represents an opened buy order in the trading system.
     """
-    def __init__(self, pc_number, cod, dt_solicitation, dt_delivery, buy_order_value, supplier, description):
+    def __init__(self, pc_number, cod, dt_solicitation, dt_delivery, buy_order_value, supplier, description, status):
         self.pc_number = pc_number
         self.cod = cod
         self.dt_solicitation = dt_solicitation
@@ -10,6 +10,7 @@ class OpenedBuyOrder():
         self.buy_order_value = buy_order_value
         self.supplier = supplier
         self.description = description
+        self.status = status
 
     def serialize(self):
         return {"pc_number": self.pc_number,
@@ -18,4 +19,5 @@ class OpenedBuyOrder():
                 "dt_delivery": self.dt_delivery,
                 "buy_order_value": self.buy_order_value,
                 "supplier": self.supplier,
-                "description": self.description}
+                "description": self.description,
+                "status": self.status}
