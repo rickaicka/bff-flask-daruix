@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  flask-app:
+    container_name: bff-flask-daruix
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/bff-flask-daruix
+    restart: unless-stopped
