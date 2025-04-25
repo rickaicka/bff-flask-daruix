@@ -11,5 +11,5 @@ jobs:
     steps:
       - name: Chamar endpoint de deploy no servidor
         run: |
-          curl -X POST http://177.153.60.157:8000/update_deploy \
+          curl -X POST https://api.daruix-engenharia.vps-kinghost.net/update_deploy \
           -H "X-DEPLOY-TOKEN: ${{ secrets.DEPLOY_SECRET }}"
