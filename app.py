@@ -12,16 +12,13 @@ CORS(app)
 
 @app.route('/update_deploy', methods=['POST'])
 def update_deploy():
-    if request.method == 'POST':
-        token = request.headers.get('X-DEPLOY-TOKEN')
-        # Verifica se o token da requisição é o mesmo configurado na variável de ambiente
-        if token != os.getenv("DEPLOY_SECRET"):  # Usando dotenv para carregar o segredo
-            return "Unauthorized", 401
-
-        subprocess.run(['git', 'pull', 'origin', 'main'], cwd='/opt/flask-deploy')
-        subprocess.run(['docker-compose', 'down'], cwd='/opt/flask-deploy')
-        subprocess.run(['docker-compose', 'up', '-d', '--build'], cwd='/opt/flask-deploy')
-        return "Deploy realizado com sucesso!", 200
+    token = request.headers.get('X-DEPLOY-TOKEN')
+    if token != os.getenv("DEPLOY_SECRET"):
+        return "Unauthorized", 401
+    subprocess.run(['git', 'pull', 'origin', 'main'], cwd='/opt/flask-deploy')
+    subprocess.run(['docker-compose', 'down'], cwd='/opt/flask-deploy')
+    subprocess.run(['docker-compose', 'up', '-d', '--build'], cwd='/opt/flask-deploy')
+    return "Deploy realizado com sucesso!", 200
 
 @app.route("/opened-buy-order", methods=["GET"])
 def get_opened_buy_order():
