@@ -9,20 +9,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout do repositório
-        uses: actions/checkout@v3
+      - name: Checkout código
+        uses: actions/checkout@v4
 
-      - name: Instalar SSH Client
-        run: sudo apt-get install openssh-client -y
-
-      - name: Adicionar chave SSH privada
+      - name: Setup SSH Key
         run: |
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H 177.153.60.157 >> ~/.ssh/known_hosts
+          ssh-keyscan 177.153.60.157 >> ~/.ssh/known_hosts
 
-      - name: Fazer deploy via SSH na VPS
+      - name: Deploy via SSH
         run: |
           ssh -i ~/.ssh/id_rsa ricardo@177.153.60.157 << 'EOF'
             cd /opt/flask-deploy
