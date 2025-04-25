@@ -1,24 +1,11 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify
 from flask_cors import CORS
-import os
 import json
 import requests
 from generate_json import generate_json_from_html
-import subprocess
-from dotenv import load_dotenv
 
 app = Flask(__name__)
 CORS(app)
-
-@app.route('/update_deploy', methods=['POST'])
-def update_deploy():
-    token = request.headers.get('X-DEPLOY-TOKEN')
-    if token != os.getenv("DEPLOY_SECRET"):
-        return "Unauthorized", 401
-    subprocess.run(['git', 'pull', 'origin', 'main'], cwd='/opt/flask-deploy')
-    subprocess.run(['docker-compose', 'down'], cwd='/opt/flask-deploy')
-    subprocess.run(['docker-compose', 'up', '-d', '--build'], cwd='/opt/flask-deploy')
-    return "Deploy realizado com sucesso!", 200
 
 @app.route("/opened-buy-order", methods=["GET"])
 def get_opened_buy_order():
