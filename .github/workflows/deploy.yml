@@ -2,26 +2,14 @@ name: Deploy Flask on VPS
 
 on:
   push:
-    branches: [ main ]  # ou "master"
+    branches: [ main ]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout código
-        uses: actions/checkout@v3
-
-      - name: Configura SSH
-        uses: webfactory/ssh-agent@v0.5.0
-        with:
-          ssh-private-key: ${{ secrets.DEPLOY_KEY }}  # Passa a chave SSH diretamente para o agente
-
-      - name: Deploy via SSH
+      - name: Chamar endpoint de deploy no servidor
         run: |
-          ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_ed25519 root@177.153.60.157 << 'EOF'
-            cd /opt/flask-deploy
-            git pull origin main
-            docker-compose down
-            docker-compose up -d --build
-          EOF
+          curl -X POST http://177.153.60.157:8000/update_deploy \
+          -H "X-DEPLOY-TOKEN: ${{ secrets.DEPLOY_SECRET }}"

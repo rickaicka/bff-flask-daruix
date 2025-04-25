@@ -6,11 +6,11 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - DATABASE_URL=postgresql://postgres_admin:postgres6348@db:5500/sgo-daruix-db
+      - DATABASE_URL=postgresql://postgres_admin:postgres6348@db:5500/sgo-daruix-db  # Usando a porta 5500
     depends_on:
       - db
     volumes:
-      - .:/bff-flask-daruix
+      - .:/bff-flask-daruix  # Para sincronizar o código local com o container
     restart: unless-stopped
 
   db:
@@ -21,9 +21,9 @@ services:
       POSTGRES_PASSWORD: postgres6348
       POSTGRES_DB: sgo-daruix-db
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - pgdata:/var/lib/postgresql/data  # Persistência de dados
     ports:
-      - "5500:5500"
+      - "5500:5500"  # Porta personalizada para o PostgreSQL (5500)
 
 volumes:
-  pgdata:
+  pgdata:  # Persistência do banco de dados
