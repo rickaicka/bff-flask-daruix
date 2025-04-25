@@ -15,14 +15,11 @@ jobs:
       - name: Configura SSH
         uses: webfactory/ssh-agent@v0.5.0
         with:
-          ssh-private-key: ${{ secrets.DEPLOY_KEY }}
+          ssh-private-key: ${{ secrets.DEPLOY_KEY }}  # Passa a chave SSH diretamente para o agente
 
       - name: Deploy via SSH
         run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
-          ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_ed25519 root@177.153.60.157 << 'EOF'
+          ssh -o StrictHostKeyChecking=no root@177.153.60.157 << 'EOF'
             cd /opt/flask-deploy
             git pull origin main
             docker-compose down
