@@ -1,13 +1,29 @@
 version: '3.8'
-
 services:
   flask-app:
+    build: .
     container_name: bff-flask-daruix
-    build:
-      context: .
-      dockerfile: Dockerfile
     ports:
       - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://postgres_admin:postgres6348@db:5500/sgo-daruix-db
+    depends_on:
+      - db
     volumes:
       - .:/bff-flask-daruix
     restart: unless-stopped
+
+  db:
+    image: postgres:14
+    container_name: sgo-daruix-db
+    environment:
+      POSTGRES_USER: postgres_admin
+      POSTGRES_PASSWORD: postgres6348
+      POSTGRES_DB: sgo-daruix-db
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5500:5500"
+
+volumes:
+  pgdata:
