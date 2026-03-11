@@ -101,6 +101,7 @@ def get_pdf(pc, cod):
         print("Arquivo:", arquivo)
 
         # garantir diretório correto
+        #teste
         ftp.cwd("/")
         ftp.cwd(pc)
 
