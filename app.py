@@ -95,33 +95,29 @@ def get_pdf(pc, cod):
 
         ftp = FTPClient.get_connection()
 
-        # gerar nome do arquivo
         pc_num = pc.replace("PC", "")
-        sufixo = cod[len(pc_num):]
-        arquivo = f"{pc_num}-{sufixo}.pdf"
+        arquivo = f"{pc_num}-{cod[-3:]}.pdf"
 
+        print("Arquivo:", arquivo)
+
+        # garantir diretório correto
+        ftp.cwd("/")
         ftp.cwd(pc)
 
-        def generate():
+        memory_file = io.BytesIO()
 
-            buffer = io.BytesIO()
+        ftp.retrbinary(
+            f"RETR {arquivo}",
+            memory_file.write
+        )
 
-            def callback(data):
-                buffer.write(data)
-                buffer.seek(0)
-                yield_data = buffer.read()
-                buffer.seek(0)
-                buffer.truncate()
-                yield yield_data
+        memory_file.seek(0)
 
-            ftp.retrbinary(f"RETR {arquivo}", callback)
-
-        return Response(
-            generate(),
+        return send_file(
+            memory_file,
             mimetype="application/pdf",
-            headers={
-                "Content-Disposition": f"inline; filename={arquivo}"
-            }
+            download_name=arquivo,
+            as_attachment=False
         )
 
     except Exception as e:
