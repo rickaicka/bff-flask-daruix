@@ -118,7 +118,7 @@ def get_pdf(pc, cod):
             memory_file,
             mimetype="application/pdf",
             download_name=arquivo,
-            as_attachment=False
+            as_attachment=True
         )
 
     except Exception as e:
