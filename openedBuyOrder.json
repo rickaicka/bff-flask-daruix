@@ -1,132 +1,12 @@
 [
     {
         "pc_number": "PC25105",
-        "cod": "25105051",
-        "dt_solicitation": "10/02/2026",
-        "dt_delivery": "12/02/2026",
-        "buy_order_value": "R$ 3.580,00",
-        "supplier": "F.PINHEIRO COM. DE MAT. PARA  CONSTRUÇÃO SLU LTDA.",
-        "description": "VIAPLUS 7000",
-        "status": "0;Em Andamento;0;Não"
-    },
-    {
-        "pc_number": "PC25064",
-        "cod": "25064013",
-        "dt_solicitation": "15/01/2026",
-        "dt_delivery": "12/02/2026",
-        "buy_order_value": "R$ 8.035,16",
-        "supplier": "RED STONE MARMORES E GRANITOS LTDA",
-        "description": "TAMPO EM GRANITO",
-        "status": "0;Em Andamento;0;Não"
-    },
-    {
-        "pc_number": "PC24077",
-        "cod": "24077145",
-        "dt_solicitation": "09/02/2026",
-        "dt_delivery": "12/02/2026",
-        "buy_order_value": "R$ 762,76",
-        "supplier": "GAMAFIX COMERCIO DE MATERIAIS PARA CONSTRUCAO LTDA",
-        "description": "MATERIAL HIDRAULICO",
-        "status": "0;Em Andamento;0;Não"
-    },
-    {
-        "pc_number": "PC21139",
-        "cod": "21139604",
-        "dt_solicitation": "12/02/2026",
-        "dt_delivery": "13/02/2026",
-        "buy_order_value": "R$ 1.600,00",
-        "supplier": "KANASHIRO COMÉRCIO DE AREIA E PEDRA LTDA ME",
-        "description": "AREIA MEDIA",
-        "status": "0;Em Andamento;0;Não"
-    },
-    {
-        "pc_number": "PC25019",
-        "cod": "25019108",
-        "dt_solicitation": "29/01/2026",
-        "dt_delivery": "13/02/2026",
-        "buy_order_value": "R$ 120,00",
-        "supplier": "INTERLUX ILUMINACAO LTDA",
-        "description": "LUMINÁRIAS - MANUTENÇÃO",
-        "status": "0;Em Andamento;0;Não"
-    },
-    {
-        "pc_number": "PC25105",
-        "cod": "25105052",
-        "dt_solicitation": "10/02/2026",
-        "dt_delivery": "16/02/2026",
-        "buy_order_value": "R$ 1.983,59",
-        "supplier": "CASA MIMOSA H. ACABAMENTOS LTDA",
-        "description": "MATERIAL HIDRAULICO",
-        "status": "0;Em Andamento;0;Não"
-    },
-    {
-        "pc_number": "PC25064",
-        "cod": "25064007",
-        "dt_solicitation": "12/01/2026",
-        "dt_delivery": "18/02/2026",
-        "buy_order_value": "R$ 2.073,72",
-        "supplier": "ELIANE  REVESTIMENTOS CERÂMICOS",
-        "description": "REVESTIMENTO CERAMICO",
-        "status": "0;Em Andamento;0;Não"
-    },
-    {
-        "pc_number": "PC25064",
-        "cod": "25064008",
-        "dt_solicitation": "12/01/2026",
-        "dt_delivery": "18/02/2026",
-        "buy_order_value": "R$ 2.482,12",
-        "supplier": "ELIANE  REVESTIMENTOS CERÂMICOS",
-        "description": "PORCELANATO",
-        "status": "0;Em Andamento;0;Não"
-    },
-    {
-        "pc_number": "PC25105",
         "cod": "25105022",
         "dt_solicitation": "21/01/2026",
         "dt_delivery": "19/02/2026",
         "buy_order_value": "R$ 16.000,00",
         "supplier": "MARCO ANTONIO SALVATICO BRAGA",
         "description": "PAINEL FIXO",
-        "status": "0;Em Andamento;0;Não"
-    },
-    {
-        "pc_number": "PC25105",
-        "cod": "25105069",
-        "dt_solicitation": "19/02/2026",
-        "dt_delivery": "20/02/2026",
-        "buy_order_value": "R$ 653,64",
-        "supplier": "CASA MIMOSA H. ACABAMENTOS LTDA",
-        "description": "MATERIAL HIDRAULICO",
-        "status": "0;Em Andamento;0;Não"
-    },
-    {
-        "pc_number": "PC21139",
-        "cod": "21139608",
-        "dt_solicitation": "19/02/2026",
-        "dt_delivery": "20/02/2026",
-        "buy_order_value": "R$ 2.859,00",
-        "supplier": "COMERCIAL DE GESSO E DRYWALL J LTDA",
-        "description": "GESSO",
-        "status": "0;Em Andamento;0;Não"
-    },
-    {
-        "pc_number": "PC21139",
-        "cod": "21139606",
-        "dt_solicitation": "18/02/2026",
-        "dt_delivery": "20/02/2026",
-        "buy_order_value": "R$ 1.600,00",
-        "supplier": "KANASHIRO COMÉRCIO DE AREIA E PEDRA LTDA ME",
-        "description": "AREIA MEDIA",
-        "status": "0;Em Andamento;0;Não"
-    },
-    {
-        "pc_number": "PC21139",
-        "cod": "21139607",
-        "dt_solicitation": "18/02/2026",
-        "dt_delivery": "23/02/2026",
-        "buy_order_value": "R$ 3.664,50",
-        "supplier": "CERÂMICA E OLARIA ABCD INDÚSTRIA DE BLOCOS CERÂMICOS LTDA",
-        "description": "BLOCO CERAMICO",
         "status": "0;Em Andamento;0;Não"
     },
     {
@@ -140,16 +20,6 @@
         "status": "0;Em Andamento;0;Não"
     },
     {
-        "pc_number": "PC25035",
-        "cod": "25035125",
-        "dt_solicitation": "23/02/2026",
-        "dt_delivery": "24/02/2026",
-        "buy_order_value": "R$ 1.148,00",
-        "supplier": "VALE DO ITAPETI COMERCIO E CONSTRUCAO LTDA",
-        "description": "CAL",
-        "status": "0;Em Andamento;0;Não"
-    },
-    {
         "pc_number": "PC24058",
         "cod": "24058075",
         "dt_solicitation": "09/12/2025",
@@ -157,16 +27,6 @@
         "buy_order_value": "R$ 3.991,68",
         "supplier": "NTS DO BRASIL COMERCIO DE MAQUINAS E FERRAMENTAS LTDA",
         "description": "QTA",
-        "status": "0;Em Andamento;0;Não"
-    },
-    {
-        "pc_number": "PC25105",
-        "cod": "25105080",
-        "dt_solicitation": "24/02/2026",
-        "dt_delivery": "25/02/2026",
-        "buy_order_value": "R$ 508,73",
-        "supplier": "CASA MIMOSA H. ACABAMENTOS LTDA",
-        "description": "MATERIAL HIDRAULICO",
         "status": "0;Em Andamento;0;Não"
     },
     {
@@ -181,32 +41,12 @@
     },
     {
         "pc_number": "PC25105",
-        "cod": "25105085",
-        "dt_solicitation": "26/02/2026",
-        "dt_delivery": "26/02/2026",
-        "buy_order_value": "R$ 5.714,50",
-        "supplier": "BELA TINTAS LTDA",
-        "description": "MATERIAL DE PINTURA",
-        "status": "0;Em Andamento;0;Não"
-    },
-    {
-        "pc_number": "PC25105",
-        "cod": "25105034",
-        "dt_solicitation": "28/01/2026",
-        "dt_delivery": "26/02/2026",
-        "buy_order_value": "R$ 1.094,00",
-        "supplier": "FUMINAS INDUSTRIA E COMÉRCIO DE FUNDIDOS LTDA",
-        "description": "GRELHA",
-        "status": "0;Em Andamento;0;Não"
-    },
-    {
-        "pc_number": "PC25105",
-        "cod": "25105083",
-        "dt_solicitation": "26/02/2026",
-        "dt_delivery": "28/02/2026",
-        "buy_order_value": "R$ 8.770,01",
-        "supplier": "CASA MIMOSA H. ACABAMENTOS LTDA",
-        "description": "MATERIAL HIDRAULICO",
+        "cod": "25105046",
+        "dt_solicitation": "05/02/2026",
+        "dt_delivery": "01/03/2026",
+        "buy_order_value": "R$ 121.589,60",
+        "supplier": "CAVE INDUSTRIA E COMERCIO DE BASALTO LTDA",
+        "description": "PISO E SOLEIRA EM GRANITO",
         "status": "0;Em Andamento;0;Não"
     },
     {
@@ -220,16 +60,6 @@
         "status": "0;Em Andamento;0;Não"
     },
     {
-        "pc_number": "PC25105",
-        "cod": "25105046",
-        "dt_solicitation": "05/02/2026",
-        "dt_delivery": "01/03/2026",
-        "buy_order_value": "R$ 121.589,60",
-        "supplier": "CAVE INDUSTRIA E COMERCIO DE BASALTO LTDA",
-        "description": "PISO E SOLEIRA EM GRANITO",
-        "status": "0;Em Andamento;0;Não"
-    },
-    {
         "pc_number": "PC21139",
         "cod": "21139612",
         "dt_solicitation": "27/02/2026",
@@ -240,22 +70,12 @@
         "status": "0;Em Andamento;0;Não"
     },
     {
-        "pc_number": "PC25035",
-        "cod": "25035126",
-        "dt_solicitation": "02/03/2026",
-        "dt_delivery": "02/03/2026",
-        "buy_order_value": "R$ 260,00",
-        "supplier": "PRESTOLOCAÇÃO DE EQUIPAMENTOS PARA CONSTRUÇÃO CIVIL LTDA",
-        "description": "LOCAÇÃO DE MARTELETE",
-        "status": "0;Em Andamento;0;Não"
-    },
-    {
         "pc_number": "PC25105",
         "cod": "25105097",
         "dt_solicitation": "03/03/2026",
         "dt_delivery": "03/03/2026",
         "buy_order_value": "R$ 4.500,00",
-        "supplier": "DIVERSOS",
+        "supplier": "FAT SONDA LTDA",
         "description": "MANUTENÇÃO POÇO ARTESIANO",
         "status": "0;Em Andamento;0;Não"
     },
@@ -270,23 +90,93 @@
         "status": "0;Em Andamento;0;Não"
     },
     {
-        "pc_number": "PC25064",
-        "cod": "25064068",
-        "dt_solicitation": "02/03/2026",
-        "dt_delivery": "04/03/2026",
-        "buy_order_value": "R$ 627,24",
-        "supplier": "MERC - COMÉRCIO DE MATERIAIS PARA CONSTRUÇÃO LTDA.",
-        "description": "MATERIAL HIDRAULICO",
+        "pc_number": "PC08342",
+        "cod": "8342681",
+        "dt_solicitation": "03/03/2026",
+        "dt_delivery": "03/03/2026",
+        "buy_order_value": "R$ 792,00",
+        "supplier": "BRASFOR COMERCIAL LTDA",
+        "description": "FORRO",
         "status": "0;Em Andamento;0;Não"
     },
     {
-        "pc_number": "PC25105",
-        "cod": "25105096",
-        "dt_solicitation": "02/03/2026",
+        "pc_number": "PC25057",
+        "cod": "25057051",
+        "dt_solicitation": "03/03/2026",
+        "dt_delivery": "03/03/2026",
+        "buy_order_value": "R$ 1.668,81",
+        "supplier": "PREFEITURA DO MUNICÍPIO DE BARRETOS",
+        "description": "TAXA DE ALVARA",
+        "status": "0;Em Andamento;0;Não"
+    },
+    {
+        "pc_number": "PC25064",
+        "cod": "25064070",
+        "dt_solicitation": "03/03/2026",
+        "dt_delivery": "03/03/2026",
+        "buy_order_value": "R$ 10.100,00",
+        "supplier": "GTEC CONSTRUÇÕES - JOÃO APARECIDO DIAS CONSTRUÇÕES EPP",
+        "description": "PLATAFORMA METÁLICA",
+        "status": "0;Em Andamento;0;Não"
+    },
+    {
+        "pc_number": "PC25057",
+        "cod": "25057052",
+        "dt_solicitation": "04/03/2026",
         "dt_delivery": "04/03/2026",
-        "buy_order_value": "R$ 262,87",
-        "supplier": "CASA MIMOSA H. ACABAMENTOS LTDA",
-        "description": "MATERIAL HIDRAULICO",
+        "buy_order_value": "R$ 1.865,00",
+        "supplier": "65.433.659 JANAILSON DA COSTA",
+        "description": "MÃO DE OBRA CIVIL (CASA 1)",
+        "status": "0;Em Andamento;0;Não"
+    },
+    {
+        "pc_number": "PC25057",
+        "cod": "25057053",
+        "dt_solicitation": "04/03/2026",
+        "dt_delivery": "04/03/2026",
+        "buy_order_value": "R$ 1.865,00",
+        "supplier": "65.433.659 JANAILSON DA COSTA",
+        "description": "MÃO DE OBRA CIVIL (CASA 2)",
+        "status": "0;Em Andamento;0;Não"
+    },
+    {
+        "pc_number": "PC25057",
+        "cod": "25057054",
+        "dt_solicitation": "04/03/2026",
+        "dt_delivery": "04/03/2026",
+        "buy_order_value": "R$ 1.865,00",
+        "supplier": "65.433.659 JANAILSON DA COSTA",
+        "description": "MÃO DE OBRA CIVIL (CASA 3)",
+        "status": "0;Em Andamento;0;Não"
+    },
+    {
+        "pc_number": "PC25064",
+        "cod": "25064071",
+        "dt_solicitation": "04/03/2026",
+        "dt_delivery": "06/03/2026",
+        "buy_order_value": "R$ 1.665,00",
+        "supplier": "CIMEMPRIMO DISTRIBUIDORA DE CIMENTO LTDA",
+        "description": "ARGAMASSA",
+        "status": "0;Em Andamento;0;Não"
+    },
+    {
+        "pc_number": "PC21139",
+        "cod": "21139616",
+        "dt_solicitation": "04/03/2026",
+        "dt_delivery": "06/03/2026",
+        "buy_order_value": "R$ 238,80",
+        "supplier": "DECORWATTS ELÉTRICA E ILUMINAÇÃO LTDA-EPP",
+        "description": "MATERIAL ELETRICO",
+        "status": "0;Em Andamento;0;Não"
+    },
+    {
+        "pc_number": "PC21139",
+        "cod": "21139620",
+        "dt_solicitation": "06/03/2026",
+        "dt_delivery": "09/03/2026",
+        "buy_order_value": "R$ 1.600,00",
+        "supplier": "KANASHIRO COMÉRCIO DE AREIA E PEDRA LTDA ME",
+        "description": "AREIA MEDIA",
         "status": "0;Em Andamento;0;Não"
     },
     {
@@ -300,6 +190,56 @@
         "status": "0;Em Andamento;0;Não"
     },
     {
+        "pc_number": "PC25064",
+        "cod": "25064078",
+        "dt_solicitation": "09/03/2026",
+        "dt_delivery": "09/03/2026",
+        "buy_order_value": "R$ 12.522,36",
+        "supplier": "CASA MIMOSA H. ACABAMENTOS LTDA",
+        "description": "MATERIAL HIDRÁULICO",
+        "status": "0;Em Andamento;0;Não"
+    },
+    {
+        "pc_number": "PC21139",
+        "cod": "21139618",
+        "dt_solicitation": "05/03/2026",
+        "dt_delivery": "10/03/2026",
+        "buy_order_value": "R$ 3.655,84",
+        "supplier": "DICICO",
+        "description": "ARGAMASSA",
+        "status": "0;Em Andamento;0;Não"
+    },
+    {
+        "pc_number": "PC25064",
+        "cod": "25064073",
+        "dt_solicitation": "06/03/2026",
+        "dt_delivery": "10/03/2026",
+        "buy_order_value": "R$ 9.812,85",
+        "supplier": "KINGSPAN - ISOESTE CONSTRUTIVOS ISOTERMICOS S/A",
+        "description": "PLACA DE EPS",
+        "status": "0;Em Andamento;0;Não"
+    },
+    {
+        "pc_number": "PC21139",
+        "cod": "21139621",
+        "dt_solicitation": "06/03/2026",
+        "dt_delivery": "10/03/2026",
+        "buy_order_value": "R$ 3.724,65",
+        "supplier": "CERÂMICA E OLARIA ABCD INDÚSTRIA DE BLOCOS CERÂMICOS LTDA",
+        "description": "BLOCO CERAMICO",
+        "status": "0;Em Andamento;0;Não"
+    },
+    {
+        "pc_number": "PC25105",
+        "cod": "25105106",
+        "dt_solicitation": "10/03/2026",
+        "dt_delivery": "11/03/2026",
+        "buy_order_value": "R$ 894,00",
+        "supplier": "DICICO",
+        "description": "ESPAÇADOR",
+        "status": "0;Em Andamento;0;Não"
+    },
+    {
         "pc_number": "PC25105",
         "cod": "25105066",
         "dt_solicitation": "18/02/2026",
@@ -310,6 +250,46 @@
         "status": "0;Em Andamento;0;Não"
     },
     {
+        "pc_number": "PC21139",
+        "cod": "21139623",
+        "dt_solicitation": "10/03/2026",
+        "dt_delivery": "11/03/2026",
+        "buy_order_value": "R$ 1.924,50",
+        "supplier": "TINTAS MC LTDA",
+        "description": "VEDAPREN PAREDE",
+        "status": "0;Em Andamento;0;Não"
+    },
+    {
+        "pc_number": "PC25105",
+        "cod": "25105107",
+        "dt_solicitation": "10/03/2026",
+        "dt_delivery": "11/03/2026",
+        "buy_order_value": "R$ 1.013,04",
+        "supplier": "DICICO",
+        "description": "ARGAMASSA",
+        "status": "0;Em Andamento;0;Não"
+    },
+    {
+        "pc_number": "PC25035",
+        "cod": "25035128",
+        "dt_solicitation": "09/03/2026",
+        "dt_delivery": "12/03/2026",
+        "buy_order_value": "R$ 933,60",
+        "supplier": "MG MADEIRAS E MATERIAIS PARA CONSTRUÇÃO EIRELI",
+        "description": "BATENTE DE MADEIRA",
+        "status": "0;Em Andamento;0;Não"
+    },
+    {
+        "pc_number": "PC25105",
+        "cod": "25105104",
+        "dt_solicitation": "06/03/2026",
+        "dt_delivery": "13/03/2026",
+        "buy_order_value": "R$ 1.030,00",
+        "supplier": "FUMINAS INDUSTRIA E COMÉRCIO DE FUNDIDOS LTDA",
+        "description": "TAMPA FERRO FUNDIDO",
+        "status": "0;Em Andamento;0;Não"
+    },
+    {
         "pc_number": "PC25105",
         "cod": "25105089",
         "dt_solicitation": "27/02/2026",
@@ -317,6 +297,36 @@
         "buy_order_value": "R$ 4.700,00",
         "supplier": "Criarth Marcenaria Técnica",
         "description": "INSTALAÇÃO DE PORTA DE MADEIRA",
+        "status": "0;Em Andamento;0;Não"
+    },
+    {
+        "pc_number": "PC21139",
+        "cod": "21139617",
+        "dt_solicitation": "04/03/2026",
+        "dt_delivery": "16/03/2026",
+        "buy_order_value": "R$ 1.818,27",
+        "supplier": "ITC ELETRODOMESTICOS LTDA",
+        "description": "EXAUSTOR",
+        "status": "0;Em Andamento;0;Não"
+    },
+    {
+        "pc_number": "PC25035",
+        "cod": "25035129",
+        "dt_solicitation": "10/03/2026",
+        "dt_delivery": "16/03/2026",
+        "buy_order_value": "R$ 440,00",
+        "supplier": "7 OLIVEIRAS DISTRIBUIDORA LTDA",
+        "description": "VIAPLUS",
+        "status": "0;Em Andamento;0;Não"
+    },
+    {
+        "pc_number": "PC25035",
+        "cod": "25035130",
+        "dt_solicitation": "10/03/2026",
+        "dt_delivery": "16/03/2026",
+        "buy_order_value": "R$ 3.420,00",
+        "supplier": "SCANMETAL - INDUSTRIA, COMERCIO, IMPORTACAO E EXPORTACAO DE FERRAMENTAS LTDA",
+        "description": "RÉGUA DE ALUMINIO",
         "status": "0;Em Andamento;0;Não"
     },
     {
@@ -337,6 +347,36 @@
         "buy_order_value": "R$ 1.660,00",
         "supplier": "FUNDAÇÃO DE APOIO AO INSTITUTO DE PESQUISAS TECNOLÓGICAS – FIPT",
         "description": "CONTROLE TECNOLOGICO - EPS",
+        "status": "0;Em Andamento;0;Não"
+    },
+    {
+        "pc_number": "PC25035",
+        "cod": "25035127",
+        "dt_solicitation": "05/03/2026",
+        "dt_delivery": "19/03/2026",
+        "buy_order_value": "R$ 1.219,00",
+        "supplier": "FUMINAS INDUSTRIA E COMÉRCIO DE FUNDIDOS LTDA",
+        "description": "GRELHAS",
+        "status": "0;Em Andamento;0;Não"
+    },
+    {
+        "pc_number": "PC24058",
+        "cod": "24058078",
+        "dt_solicitation": "09/03/2026",
+        "dt_delivery": "19/03/2026",
+        "buy_order_value": "R$ 3.817,30",
+        "supplier": "DECORWATTS ELÉTRICA E ILUMINAÇÃO LTDA-EPP",
+        "description": "MATERIAL ELETRICO",
+        "status": "0;Em Andamento;0;Não"
+    },
+    {
+        "pc_number": "PC25064",
+        "cod": "25064079",
+        "dt_solicitation": "09/03/2026",
+        "dt_delivery": "23/03/2026",
+        "buy_order_value": "R$ 26.216,92",
+        "supplier": "A.L. CORRAL COMERCIO E SERVICOS LTDA",
+        "description": "MATERIAL HIDRÁULICO",
         "status": "0;Em Andamento;0;Não"
     }
 ]

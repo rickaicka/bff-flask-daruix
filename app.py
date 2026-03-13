@@ -1,12 +1,10 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, send_file
 from flask_cors import CORS
 import json
 import requests
 from generate_json import generate_json_from_html
-from flask import send_file
-from ftplib import FTP
 import io
-from flask import Response
+from ftplib import error_perm
 from ftp_client import FTPClient
 
 app = Flask(__name__)
@@ -87,7 +85,6 @@ def list_pdfs(pc):
 
 @app.route("/pdf/<pc>/<cod>", methods=["GET"])
 def get_pdf(pc, cod):
-
     try:
 
         if ".." in pc or ".." in cod:
@@ -100,10 +97,17 @@ def get_pdf(pc, cod):
 
         print("Arquivo:", arquivo)
 
-        # garantir diretório correto
-        #teste
         ftp.cwd("/")
         ftp.cwd(pc)
+
+        # 🔎 verificar se arquivo existe
+        try:
+            ftp.size(arquivo)
+        except error_perm:
+            return jsonify({
+                "status": "error",
+                "message": "PDF não encontrado"
+            }), 404
 
         memory_file = io.BytesIO()
 
@@ -118,11 +122,10 @@ def get_pdf(pc, cod):
             memory_file,
             mimetype="application/pdf",
             download_name=arquivo,
-            as_attachment=True
+            as_attachment=False
         )
 
     except Exception as e:
-
         return jsonify({
             "status": "error",
             "message": str(e)
